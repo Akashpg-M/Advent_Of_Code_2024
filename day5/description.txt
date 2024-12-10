@@ -1,0 +1,14 @@
+case 1:
+
+The problem is about verifying the correct order of pages in several updates based on given precedence rules.
+Each rule specifies that one page must be printed before another if both pages are present in the update. 
+
+For each update:
+
+1. Check if the pages are in the correct order according to the rules.
+2. If an update is correct, find its middle page (the middle element in the sorted list of pages).
+3. Calculate the sum of the middle pages from all correctly-ordered updates.
+
+
+case 2:
+

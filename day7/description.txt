@@ -1,0 +1,2 @@
+case1:
+task: return the value that can possible be generated from the given set of numbers by appling any combination of + or *

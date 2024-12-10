@@ -1,0 +1,47 @@
+description:
+
+    case 1: 
+
+    consider a list of inputs are give, the list is called asrecord and the elements in the record are called levels. 
+
+    here we need to chck wether the following conditions are satisfied for a given record:
+
+        1. levels in the given record are arranged in either ascending or descending.
+        2. the absolute difference between the adjacent level in the same record should be in the range [1,3].
+
+    time complexity Analysis of the code : 
+
+       Explanation:
+        - for a record containg n level. 
+        - The code calls the isAscending() or isDescending() method,
+          isAscending / isDescending will take O(n) time complexity.
+        - The record is passed once to the isAscending or isDescending method, Overall leading to a 
+          time complexity to O(n)
+
+
+       Overall time complexity : O(n)
+
+
+
+    case 2:
+
+    consider a list of inputs are give, the list is called asrecord and the elements in the record are called levels. 
+    
+    here we need to chck wether the following conditions are satisfied for a given record:
+
+        1. levels in the given record is arranged in either ascending or descending with tolerance of removing any one level makes the record safe.
+
+        2. the absolute difference between the adjacent level in the same record should be in the range [1,3] with the tolerance of adjusting if removing one level makes the record safe.
+
+    time compleity analyssis of the code : 
+        - for n records containing m levels 
+        - we will be checking if removing any one level from the record could lead us to a Safe data
+          if we found such a record we will update the count and move to the net record
+        - we can see that at worst case either the removal of last elemet gives us a safe data or removing any 
+          elemnt dosnt yield a safe data.
+        - so reinitializing a new array by removing the element takes about O(n) time complexity and its being done
+          to all the n levels in the record leading to O(n^2),
+
+        Overall time complexity : O(n).
+
+    
